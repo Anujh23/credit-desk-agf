@@ -44,11 +44,10 @@
     }
     header .logo-mark {
       width: 34px; height: 34px;
-      background: var(--accent);
       border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'DM Serif Display', serif;
-      color: #fff; font-size: 16px; font-weight: 700;
+      object-fit: contain;
+      background: #fff;
+      padding: 2px;
     }
     header h1 {
       font-family: 'DM Serif Display', serif;
@@ -357,7 +356,7 @@
 <body>
 
 <header>
-  <div class="logo-mark">C</div>
+  <img class="logo-mark" src="/static/NBL-Logo.png" alt="Logo">
   <h1>CreditDesk</h1>
   <div class="header-right"><span id="currentDate"></span></div>
 </header>
