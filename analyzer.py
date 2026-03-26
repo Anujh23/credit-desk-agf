@@ -33,6 +33,7 @@ SALARY_KEYWORDS = re.compile(
     '|'.join([
         r'salary',
         r'sal cr',
+        r'salar',
         r'sal/',
         r'monthly pay',
         r'payroll',
@@ -95,6 +96,7 @@ LOAN_EXCLUDE_PATTERNS = re.compile(
         r'vivifi', r'meghdoo', r'salaryontime', r'minutesloan',
         r'altura', r'jublee', r'richman', r'surya.?shakti', r'\bdsg\b',
         r'shreeloan', r'loanprime', r'neena\s*imp',
+        r'pawansut', r'tapstart', r'u\.?\s*y\.?\s*finc',
     ]),
     re.IGNORECASE,
 )
@@ -151,7 +153,6 @@ LENDER_PATTERNS = re.compile(
         r'vivifi', r'meghdoo', r'salaryontime', r'minutesloan',
         r'altura', r'jublee', r'richman', r'surya.?shakti', r'\bdsg\b',
         r'shreeloan', r'loanprime', r'neena\s*imp',
-        r'pawansut', r'tapstart', r'u\.?\s*y\.?\s*finc',
     ]),
     re.IGNORECASE,
 )
@@ -485,7 +486,7 @@ def _is_upi_p2p(narr: str) -> bool:
     if len(parts) >= 2:
         sender = parts[1].strip()
         words = sender.split()
-        if 1 <= len(words) <= 2 and not COMPANY_PATTERNS.search(sender):
+        if 1 <= len(words) <= 3 and not COMPANY_PATTERNS.search(sender):
             return True
     return False
 
