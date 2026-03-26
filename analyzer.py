@@ -151,6 +151,7 @@ LENDER_PATTERNS = re.compile(
         r'vivifi', r'meghdoo', r'salaryontime', r'minutesloan',
         r'altura', r'jublee', r'richman', r'surya.?shakti', r'\bdsg\b',
         r'shreeloan', r'loanprime', r'neena\s*imp',
+        r'pawansut', r'tapstart', r'u\.?\s*y\.?\s*finc',
     ]),
     re.IGNORECASE,
 )
