@@ -1,0 +1,73 @@
+{
+  "all_pincodes_cities": [
+    { "city": "Pune",       "lat": 18.5204, "lng": 73.8567 },
+    { "city": "Hyderabad",  "lat": 17.3850, "lng": 78.4867 },
+    { "city": "Gurugram",   "lat": 28.4595, "lng": 77.0266 },
+    { "city": "Ahmedabad",  "lat": 23.0225, "lng": 72.5714 },
+    { "city": "Vadodara",   "lat": 22.3072, "lng": 73.1812 },
+    { "city": "Kolkata",    "lat": 22.5726, "lng": 88.3639 },
+    { "city": "Jaipur",     "lat": 26.9124, "lng": 75.7873 },
+    { "city": "Indore",     "lat": 22.7196, "lng": 75.8577 },
+    { "city": "Noida",      "lat": 28.5355, "lng": 77.3910 },
+    { "city": "Faridabad",  "lat": 28.4089, "lng": 77.3178 },
+    { "city": "Ghaziabad",  "lat": 28.6692, "lng": 77.4538 },
+    { "city": "Delhi",      "lat": 28.6139, "lng": 77.2090 },
+    { "city": "Mumbai",     "lat": 19.0760, "lng": 72.8777 },
+    { "city": "Chennai",    "lat": 13.0827, "lng": 80.2707 },
+    { "city": "Bangalore",  "lat": 12.9716, "lng": 77.5946 },
+    { "city": "Coimbatore", "lat": 11.0168, "lng": 76.9558 }
+  ],
+  "specific_pincodes": [
+    { "city": "Trichy", "pincode": "620001", "lat": 10.8230, "lng": 78.6920 },
+    { "city": "Trichy", "pincode": "620002", "lat": 10.8110, "lng": 78.6920 },
+    { "city": "Trichy", "pincode": "620003", "lat": 10.8500, "lng": 78.6810 },
+    { "city": "Trichy", "pincode": "620004", "lat": 10.7780, "lng": 78.7130 },
+    { "city": "Trichy", "pincode": "620005", "lat": 10.7710, "lng": 78.7050 },
+    { "city": "Trichy", "pincode": "620006", "lat": 10.7600, "lng": 78.7150 },
+    { "city": "Trichy", "pincode": "620007", "lat": 10.7600, "lng": 78.7400 },
+    { "city": "Trichy", "pincode": "620008", "lat": 10.7500, "lng": 78.6900 },
+    { "city": "Trichy", "pincode": "620009", "lat": 10.7400, "lng": 78.7250 },
+    { "city": "Trichy", "pincode": "620010", "lat": 10.7300, "lng": 78.7100 },
+    { "city": "Trichy", "pincode": "620011", "lat": 10.7800, "lng": 78.7000 },
+    { "city": "Trichy", "pincode": "620012", "lat": 10.7600, "lng": 78.6700 },
+    { "city": "Trichy", "pincode": "620013", "lat": 10.8100, "lng": 78.7400 },
+
+    { "city": "Salem", "pincode": "636001", "lat": 11.6643, "lng": 78.1460 },
+    { "city": "Salem", "pincode": "636002", "lat": 11.6800, "lng": 78.1500 },
+    { "city": "Salem", "pincode": "636003", "lat": 11.6700, "lng": 78.1300 },
+    { "city": "Salem", "pincode": "636004", "lat": 11.6500, "lng": 78.1500 },
+    { "city": "Salem", "pincode": "636005", "lat": 11.6400, "lng": 78.1700 },
+    { "city": "Salem", "pincode": "636007", "lat": 11.6500, "lng": 78.1300 },
+    { "city": "Salem", "pincode": "636008", "lat": 11.6200, "lng": 78.1300 },
+    { "city": "Salem", "pincode": "636009", "lat": 11.6800, "lng": 78.1900 },
+    { "city": "Salem", "pincode": "636010", "lat": 11.6700, "lng": 78.1100 },
+    { "city": "Salem", "pincode": "636011", "lat": 11.6900, "lng": 78.1300 },
+    { "city": "Salem", "pincode": "636012", "lat": 11.6500, "lng": 78.1900 },
+
+    { "city": "Vellore", "pincode": "632001", "lat": 12.9165, "lng": 79.1325 },
+    { "city": "Vellore", "pincode": "632004", "lat": 12.9241, "lng": 79.1352 },
+    { "city": "Vellore", "pincode": "632006", "lat": 12.9080, "lng": 79.1200 },
+    { "city": "Vellore", "pincode": "632007", "lat": 12.9400, "lng": 79.1500 },
+    { "city": "Vellore", "pincode": "632009", "lat": 12.9700, "lng": 79.1700 },
+    { "city": "Vellore", "pincode": "632011", "lat": 12.9000, "lng": 79.1100 },
+    { "city": "Vellore", "pincode": "632014", "lat": 12.9300, "lng": 79.1600 },
+    { "city": "Vellore", "pincode": "632059", "lat": 12.8700, "lng": 79.1400 },
+
+    { "city": "Kanchipuram", "pincode": "631501", "lat": 12.8341, "lng": 79.7036 },
+    { "city": "Kanchipuram", "pincode": "631502", "lat": 12.8500, "lng": 79.7200 },
+
+    { "city": "Sriperumbudur", "pincode": "602105", "lat": 12.9682, "lng": 79.9483 },
+    { "city": "Sriperumbudur", "pincode": "602106", "lat": 12.9800, "lng": 79.9600 },
+
+    { "city": "Ambur", "pincode": "635802", "lat": 12.7858, "lng": 78.7124 },
+    { "city": "Ambur", "pincode": "635811", "lat": 12.7950, "lng": 78.7250 },
+
+    { "city": "Ranipet", "pincode": "632401", "lat": 12.9244, "lng": 79.3308 },
+    { "city": "Ranipet", "pincode": "632402", "lat": 12.9100, "lng": 79.3500 },
+    { "city": "Ranipet", "pincode": "632403", "lat": 12.9350, "lng": 79.3200 },
+    { "city": "Ranipet", "pincode": "632404", "lat": 12.9180, "lng": 79.3450 },
+
+    { "city": "Chengalpattu", "pincode": "603001", "lat": 12.6938, "lng": 79.9759 },
+    { "city": "Chengalpattu", "pincode": "603002", "lat": 12.7050, "lng": 79.9850 }
+  ]
+}
