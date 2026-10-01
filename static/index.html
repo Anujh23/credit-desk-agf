@@ -1214,6 +1214,7 @@
         <div class="card" style="margin-bottom:20px;">
           <div class="card-title"><div class="icon" style="background:#eef2ff;"><i class="fa-solid fa-user-shield" style="color:var(--blue);"></i></div> Applicant Details</div>
           <div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:14px 18px;">
+            <div class="field" style="margin-bottom:0;"><label>Lead ID</label><input type="text" id="ca-lead" placeholder="e.g. LD-10234" maxlength="50" /></div>
             <div class="field" style="margin-bottom:0;"><label>Monthly Income (&#8377;)</label><input type="text" id="ca-income" placeholder="e.g. 1,46,000" min="0" oninput="formatIndianComma(this)" /></div>
             <div class="field" style="margin-bottom:0;"><label>Fixed Obligations (&#8377;)</label><input type="text" id="ca-obligations" placeholder="e.g. 28,000" min="0" oninput="formatIndianComma(this)" /></div>
             <div class="field" style="margin-bottom:0;"><label>CIBIL Score</label><input type="number" id="ca-cibil" placeholder="e.g. 678" min="300" max="900" /></div>
@@ -2892,6 +2893,7 @@ async function analyzeCredit() {
       method: 'POST',
       headers: authHeaders({ 'Content-Type': 'application/json' }),
       body: JSON.stringify({
+        lead_id: document.getElementById('ca-lead').value.trim(),
         monthly_income: income,
         fixed_obligations: obligations,
         cibil: cibil,
@@ -2958,7 +2960,7 @@ async function analyzeCredit() {
 
     // Capture doc checklist state before reset (for PD form)
     const docItems = ['Aadhaar Card', 'PAN Card', 'Address Proof', 'Bank Statement', 'Salary Slip',
-      'Employee ID / Offer Letter', 'CIBIL', 'Cheque', 'Video KYC', 'E-Sign', 'Mandate',
+      'Employee ID / Offer Letter', 'CIBIL', 'Cheque', 'Video KYC', 'Liveness (Selfie check)', 'E-Sign', 'Mandate',
       'Alternative Number', 'Reference Number', 'Official Mail ID / Domain Photo'];
     let docState = {};
     try { docState = JSON.parse(localStorage.getItem('fintools_doc_checklist')) || {}; } catch {}
@@ -2997,7 +2999,7 @@ function showDocReadiness() {
   const checkKey = 'fintools_doc_checklist';
   const items = [
     'Aadhaar Card', 'PAN Card', 'Address Proof', 'Bank Statement', 'Salary Slip',
-    'Employee ID / Offer Letter', 'CIBIL', 'Cheque', 'Video KYC', 'E-Sign', 'Mandate',
+    'Employee ID / Offer Letter', 'CIBIL', 'Cheque', 'Video KYC', 'Liveness (Selfie check)', 'E-Sign', 'Mandate',
     'Alternative Number', 'Reference Number', 'Official Mail ID / Domain Photo'
   ];
   let state = {};
@@ -3599,7 +3601,7 @@ async function ciUpload() {
 // ══════════════════════════════════════════
 const docCheckItems = [
   'Aadhaar Card', 'PAN Card', 'Address Proof', 'Bank Statement', 'Salary Slip',
-  'Employee ID / Offer Letter', 'CIBIL', 'Cheque', 'Video KYC', 'E-Sign', 'Mandate',
+  'Employee ID / Offer Letter', 'CIBIL', 'Cheque', 'Video KYC', 'Liveness (Selfie check)', 'E-Sign', 'Mandate',
   'Alternative Number', 'Reference Number', 'Official Mail ID / Domain Photo'
 ];
 const docCheckKey = 'fintools_doc_checklist';
